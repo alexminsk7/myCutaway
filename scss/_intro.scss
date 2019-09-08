@@ -1,0 +1,75 @@
+.header {
+   padding-top: 1.2rem; 
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .user {
+         display: flex;
+         &__avatar {
+            width: 3.8rem;
+            height: 3.8rem;
+            background: #fff url(../img/masta.jpg) center center no-repeat;
+            background-size: cover;
+            img {
+               border-radius: 50%;
+            }
+         }
+         &__content {
+            padding-left: 0.6rem;
+            .user__name {
+               font-size: 1.06rem;
+               line-height: 1.2;
+               font-weight: 700;
+               color: $black;
+            }
+            .user__prof {
+               font-size: 0.8rem;
+               color: rgba(#2B2A2C, .7);
+               margin-top: 3px;
+            }
+         }
+      }
+      .nav {
+         display: flex;
+         align-items: center;
+         height: 100%;
+         &__link {
+            position: relative;
+            margin-left: 2rem;
+            font-size: 0.93rem;
+            color: $black;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 1.33rem;
+            &:after {
+               content: "";
+               width: 0;
+               height: 2px;
+               background-color: $black;
+               position: absolute;
+               bottom: -5px;
+               left: 0;
+               z-index: 1;
+               transition: width .3s linear;
+            }
+            &:hover:not(.nav__link-btn) {
+               &:after {
+                  width: 100%;
+               }
+            }
+            &-btn {
+               padding: 0.66rem 2rem;
+               border: 2px solid $black;
+               border-radius: 1.33rem;
+               transition: background-color .3s linear, color .3s linear;
+               &:hover {
+                  background-color: $black;
+                  color: #fff;
+               }
+            }
+         }
+      }
+   }
+}

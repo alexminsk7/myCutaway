@@ -1,0 +1,65 @@
+$black: #2B2A2C;
+$gray: #6A696B;
+$light-gray: #8D8D8E;
+$bg: #0A696B;
+*, 
+*:before, 
+*:after {
+   box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+   margin: 0;
+}
+p {
+   margin: 0;
+}
+html {
+   font-size: 15px;
+}
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1rem;
+   color: $black;
+}
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   // outline: 1px solid rgb(9, 223, 187);
+}
+.btn {
+   display: inline-block;
+   vertical-align: top;
+   padding: 0;
+   border: 1px solid $gray;
+   padding: 1.1rem 1.8rem;
+   min-width: 11.34rem;
+   border-radius: 1.67rem;
+   background: none;
+   cursor: pointer;
+   font-family: inherit;
+   font-size: 1.06rem;
+   line-height: 1.1;
+   color: $black;
+   text-transform: uppercase;
+   text-decoration: none;
+   text-align: center;
+   transition: all .3s linear;
+   &:focus {
+      outline: none;
+   }
+   &:hover {
+      background-color: $black;
+      color: #fff;
+      box-shadow: 5px 5px 10px rgba(#000, .3);
+   }
+   + .btn {
+      margin-left: 1rem;
+   }
+}
+
+// BLOCKS
+@import "intro";
+@import "main"

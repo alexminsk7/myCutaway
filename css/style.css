@@ -1,0 +1,235 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #2B2A2C;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border: 1px solid #6A696B;
+  padding: 1.1rem 1.8rem;
+  min-width: 11.34rem;
+  border-radius: 1.67rem;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.06rem;
+  line-height: 1.1;
+  color: #2B2A2C;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #2B2A2C;
+  color: #fff;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn + .btn {
+  margin-left: 1rem;
+}
+
+.header {
+  padding-top: 1.2rem;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__inner .user__avatar {
+  width: 3.8rem;
+  height: 3.8rem;
+  background: #fff url(../img/masta.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.header__inner .user__avatar img {
+  border-radius: 50%;
+}
+
+.header__inner .user__content {
+  padding-left: 0.6rem;
+}
+
+.header__inner .user__content .user__name {
+  font-size: 1.06rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #2B2A2C;
+}
+
+.header__inner .user__content .user__prof {
+  font-size: 0.8rem;
+  color: rgba(43, 42, 44, 0.7);
+  margin-top: 3px;
+}
+
+.header__inner .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header__inner .nav__link {
+  position: relative;
+  margin-left: 2rem;
+  font-size: 0.93rem;
+  color: #2B2A2C;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 1.33rem;
+}
+
+.header__inner .nav__link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #2B2A2C;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: width .3s linear;
+  transition: width .3s linear;
+}
+
+.header__inner .nav__link:hover:not(.nav__link-btn):after {
+  width: 100%;
+}
+
+.header__inner .nav__link-btn {
+  padding: 0.66rem 2rem;
+  border: 2px solid #2B2A2C;
+  border-radius: 1.33rem;
+  -webkit-transition: background-color .3s linear, color .3s linear;
+  transition: background-color .3s linear, color .3s linear;
+}
+
+.header__inner .nav__link-btn:hover {
+  background-color: #2B2A2C;
+  color: #fff;
+}
+
+.main {
+  padding-top: 7rem;
+}
+
+.main__inner {
+  padding-bottom: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+  position: relative;
+}
+
+.main__content {
+  width: 50%;
+}
+
+.main__content .main__subtitle {
+  font-size: 2.13rem;
+  font-weight: 200;
+  color: #2B2A2C;
+}
+
+.main__content .main__title {
+  margin-bottom: .3rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2B2A2C;
+}
+
+.main__content .main__text {
+  margin-bottom: 1.66rem;
+  font-size: 1.2rem;
+  color: rgba(43, 42, 44, 0.7);
+}
+
+.main__content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.8rem;
+}
+
+.main__content .social__link {
+  margin-right: 0.66rem;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+.main__content .social__link:hover {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+.main__photo {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */
