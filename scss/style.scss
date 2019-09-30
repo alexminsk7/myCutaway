@@ -27,16 +27,22 @@ body {
    margin: 0 auto;
    padding-left: 1rem;
    padding-right: 1rem;
-   // outline: 1px solid rgb(9, 223, 187);
+   outline: 1px solid rgb(9, 223, 187);
+}
+.text-center {
+   text-align: center;
+}
+.centro {
+   margin: 0 auto;
 }
 .btn {
    display: inline-block;
    vertical-align: top;
    padding: 0;
    border: 1px solid $gray;
-   padding: 1.1rem 1.8rem;
+   padding: 1.05em 1.7em;
    min-width: 11.34rem;
-   border-radius: 1.67rem;
+   border-radius: 1.8em;
    background: none;
    cursor: pointer;
    font-family: inherit;
@@ -58,8 +64,20 @@ body {
    + .btn {
       margin-left: 1rem;
    }
+
+   // MADIFICATORS
+   &--sm {
+      padding: .7em 1.2em;
+      font-size: 0.94rem;
+      font-weight: 700;
+      border-width: 2px;
+      &:hover {
+         border: 2px solid $black;
+      }
+   }
 }
 
 // BLOCKS
 @import "intro";
-@import "main"
+@import "main";
+@import "works"

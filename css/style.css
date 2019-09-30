@@ -29,6 +29,15 @@ body {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  outline: 1px solid #09dfbb;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.centro {
+  margin: 0 auto;
 }
 
 .btn {
@@ -36,9 +45,9 @@ body {
   vertical-align: top;
   padding: 0;
   border: 1px solid #6A696B;
-  padding: 1.1rem 1.8rem;
+  padding: 1.05em 1.7em;
   min-width: 11.34rem;
-  border-radius: 1.67rem;
+  border-radius: 1.8em;
   background: none;
   cursor: pointer;
   font-family: inherit;
@@ -65,6 +74,17 @@ body {
 
 .btn + .btn {
   margin-left: 1rem;
+}
+
+.btn--sm {
+  padding: .7em 1.2em;
+  font-size: 0.94rem;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+.btn--sm:hover {
+  border: 2px solid #2B2A2C;
 }
 
 .header {
@@ -231,5 +251,90 @@ body {
   bottom: 0;
   right: 0;
   z-index: 1;
+}
+
+.works {
+  padding: 2.65rem 0;
+}
+
+.works__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.works__nav-link {
+  margin: 0 1.2rem;
+  font-size: 0.8rem;
+  color: rgba(43, 42, 44, 0.7);
+  text-decoration: none;
+}
+
+.works__nav-link:hover {
+  text-decoration: underline;
+}
+
+.works .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -1rem;
+  margin-bottom: 2.8rem;
+}
+
+.works .portfolio__col {
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+  padding: 1rem;
+}
+
+.works .portfolio__col .work {
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 4px #2b2a2c;
+          box-shadow: 0 0 4px #2b2a2c;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.works .portfolio__col .work:hover {
+  -webkit-box-shadow: 0 0 14px #2b2a2c;
+          box-shadow: 0 0 14px #2b2a2c;
+}
+
+.works .portfolio__col .work__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.works .portfolio__col .work__content {
+  padding: 1rem 0.8rem;
+  color: #2B2A2C;
+  text-transform: uppercase;
+}
+
+.works .portfolio__col .work__content .work__cat {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.works .portfolio__col .work__content .work__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.06rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
