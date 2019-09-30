@@ -1,1 +1,1 @@
-Режим вывода команд на экран (ECHO) включен.
+work as beginner on site-portfolio
