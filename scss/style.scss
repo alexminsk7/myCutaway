@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
    margin: 0;
 }
 p {
-   margin: 0;
+   margin: 0 0 1rem;
 }
 html {
    font-size: 15px;
@@ -32,8 +32,10 @@ body {
 .text-center {
    text-align: center;
 }
-.centro {
-   margin: 0 auto;
+.img {
+   display: block;
+   max-width: 100%;
+   height: auto;
 }
 .btn {
    display: inline-block;
@@ -80,4 +82,6 @@ body {
 // BLOCKS
 @import "intro";
 @import "main";
-@import "works"
+@import "works";
+@import "about";
+@import "reviews"
