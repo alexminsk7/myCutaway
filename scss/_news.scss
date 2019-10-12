@@ -1,0 +1,109 @@
+.news {
+   margin-top: 10rem;
+   margin-bottom: 8rem;
+   padding: 4.6rem 0;
+
+   &__header {
+      margin-bottom: 3.6rem;
+      text-align: center;
+
+      .news__title {
+         margin-bottom: .3rem;
+         font-size: 3rem;
+         font-weight: 700;
+         color: $black;
+         text-transform: uppercase;
+      }
+
+      .news__text {
+         font-size: 1.2rem;
+         font-weight: 300;
+         color: $light-gray;
+      }
+   }
+
+   .articles {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1rem;
+
+      &__col {
+         width: 33.33333%;
+         padding: 0 1rem;
+
+         .articles__item {
+            margin-bottom: 2rem;
+         }
+
+         .articles__header {
+            position: relative;
+            margin-bottom: 1.35rem;
+
+            .articles__date {
+               width: 77px;
+               height: 77px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: $black;
+               color: #fff;
+               font-size: 1.06rem;
+               text-align: center;
+               line-height: 1.4;
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 1;
+            }
+         }
+
+         .articles__content {
+            margin-bottom: 2rem;
+
+            .articles__title {
+               margin-bottom: 0.6rem;
+               font-size: 1.2rem;
+               font-weight: 700;
+               text-transform: uppercase;
+               color: $black;
+
+               a {
+                  color: inherit;
+                  text-decoration: none;
+
+                  &:hover {
+                     text-decoration: underline;
+                  }
+               }
+            }
+
+            .articles__cat {
+               margin-bottom: 1.5rem;
+               font-size: 0.8rem;
+               text-transform: uppercase;
+               color: $black;
+            }
+
+            .articles__text {
+               font-size: 0.8rem;
+               font-weight: 300;
+               line-height: 2;
+               color: $gray;
+            }
+         }
+      }
+   }
+
+   .news__footer {
+      text-align: right;
+
+      &-link {
+         font-size: 0.94rem;
+         color: $gray;
+
+         &:hover {
+            text-decoration: none;
+         }
+      }
+   }
+}

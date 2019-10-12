@@ -2,25 +2,34 @@ $black: #2B2A2C;
 $gray: #6A696B;
 $light-gray: #8D8D8E;
 $bg: #0A696B;
-*, 
-*:before, 
+
+*,
+*:before,
 *:after {
    box-sizing: border-box;
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
    margin: 0;
 }
+
 p {
    margin: 0 0 1rem;
 }
+
 html {
    font-size: 15px;
 }
+
 body {
    font-family: 'Montserrat', sans-serif;
    font-size: 1rem;
    color: $black;
 }
+
 .container {
    width: 100%;
    max-width: 1200px;
@@ -29,14 +38,17 @@ body {
    padding-right: 1rem;
    outline: 1px solid rgb(9, 223, 187);
 }
+
 .text-center {
    text-align: center;
 }
+
 .img {
    display: block;
    max-width: 100%;
    height: auto;
 }
+
 .btn {
    display: inline-block;
    vertical-align: top;
@@ -55,15 +67,19 @@ body {
    text-decoration: none;
    text-align: center;
    transition: all .3s linear;
+
    &:focus {
       outline: none;
    }
+
    &:hover {
       background-color: $black;
       color: #fff;
       box-shadow: 5px 5px 10px rgba(#000, .3);
+      border-color: $black;
    }
-   + .btn {
+
+   +.btn {
       margin-left: 1rem;
    }
 
@@ -73,6 +89,7 @@ body {
       font-size: 0.94rem;
       font-weight: 700;
       border-width: 2px;
+
       &:hover {
          border: 2px solid $black;
       }
@@ -84,4 +101,5 @@ body {
 @import "main";
 @import "works";
 @import "about";
-@import "reviews"
+@import "reviews";
+@import "news"
