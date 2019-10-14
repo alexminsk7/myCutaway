@@ -1,29 +1,35 @@
 .about {
    padding-top: 3.45rem;
    padding-bottom: 7rem;
+
    &__inner {
       display: flex;
       max-width: 1090px;
+
       .about__photo {
-         // margin-left: 5rem;
-         outline: 1px solid red;
+
+         // outline: 1px solid red;
          img {
             margin-left: 2rem;
          }
       }
+
       .about__content {
          margin-top: 2rem;
          padding-left: 3.2rem;
       }
-      .about__photo, 
+
+      .about__photo,
       .about__content {
          width: 50%;
+
          &-title {
             font-size: 3rem;
             font-weight: 700;
             color: $black;
             text-transform: uppercase;
          }
+
          &-bigtitle {
             font-size: 6rem;
             font-weight: 700;
@@ -34,6 +40,7 @@
             margin-bottom: 1.4rem;
             text-transform: uppercase;
          }
+
          &-text {
             font-size: 0.8rem;
             font-weight: 300;

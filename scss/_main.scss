@@ -1,5 +1,6 @@
 .main {
    padding-top: 7rem;
+
    &__inner {
       padding-bottom: 8rem;
       display: flex;
@@ -7,41 +8,49 @@
       position: relative;
       // overflow: hidden;
    }
+
    &__content {
       width: 50%;
+
       .main__subtitle {
          font-size: 2.13rem;
          font-weight: 200;
          color: $black;
       }
+
       .main__title {
          margin-bottom: .3rem;
          font-size: 3rem;
          font-weight: 700;
          color: $black;
       }
+
       .main__text {
          margin-bottom: 1.66rem;
          font-size: 1.2rem;
          color: rgba($black, .7);
       }
+
       .social {
          display: flex;
          margin-bottom: 2.8rem;
+
          &__link {
             margin-right: 0.66rem;
             text-decoration: none;
             transition: transform .3s linear;
+
             &:hover {
                transform: scale(0.85);
             }
          }
       }
    }
+
    &__photo {
       position: absolute;
       height: 100%;
-      bottom:0;
+      bottom: 0;
       right: 0;
       z-index: 1;
    }

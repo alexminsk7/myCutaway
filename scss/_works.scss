@@ -1,49 +1,60 @@
 .works {
    padding: 2.65rem 0;
+
    &__nav {
       display: flex;
       justify-content: center;
       margin-bottom: 1.4rem;
+
       &-link {
          margin: 0 1.2rem;
          font-size: 0.8rem;
          color: rgba($black, .7);
          text-decoration: none;
+
          &:hover {
             text-decoration: underline;
          }
       }
    }
+
    .portfolio {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -1rem;
       margin-bottom: 2.8rem;
+
       &__col {
          flex-basis: 33.33333%;
          padding: 1rem;
+
          .work {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 4px rgba($black, 25%);
 
             transition: box-shadow .3s;
+
             &:hover {
                box-shadow: 0 0 14px rgba($black, 25%);
             }
+
             &__image {
                display: block;
                max-width: 100%;
                height: auto;
             }
+
             &__content {
                padding: 1rem 0.8rem;
                color: $black;
                text-transform: uppercase;
+
                .work__cat {
                   font-size: 0.8rem;
                   margin-bottom: 0.5rem;
                }
+
                .work__title {
                   display: flex;
                   justify-content: space-between;

@@ -36,7 +36,7 @@ body {
    margin: 0 auto;
    padding-left: 1rem;
    padding-right: 1rem;
-   outline: 1px solid rgb(9, 223, 187);
+   // outline: 1px solid rgb(9, 223, 187);
 }
 
 .text-center {
@@ -85,6 +85,7 @@ body {
 
    // MADIFICATORS
    &--sm {
+      min-width: 0;
       padding: .7em 1.2em;
       font-size: 0.94rem;
       font-weight: 700;
@@ -102,4 +103,5 @@ body {
 @import "works";
 @import "about";
 @import "reviews";
-@import "news"
+@import "news";
+@import "footer"

@@ -32,7 +32,6 @@ body {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  outline: 1px solid #09dfbb;
 }
 
 .text-center {
@@ -83,6 +82,7 @@ body {
 }
 
 .btn--sm {
+  min-width: 0;
   padding: .7em 1.2em;
   font-size: 0.94rem;
   font-weight: 700;
@@ -356,10 +356,6 @@ body {
   max-width: 1090px;
 }
 
-.about__inner .about__photo {
-  outline: 1px solid red;
-}
-
 .about__inner .about__photo img {
   margin-left: 2rem;
 }
@@ -466,7 +462,7 @@ body {
 
 .news {
   margin-top: 10rem;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   padding: 4.6rem 0;
 }
 
@@ -581,5 +577,84 @@ body {
 
 .news .news__footer-link:hover {
   text-decoration: none;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: #2B2A2C;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__inner .footer__credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__inner .footer__credits .footer__copyright {
+  padding-right: 0.8rem;
+  margin-right: 1rem;
+  font-size: 0.94rem;
+  color: #BBBBCC;
+  border-right: 1px solid #6a696b;
+}
+
+.footer__inner .footer__credits .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__inner .footer__credits .footer__social a {
+  margin-right: 1.2rem;
+  text-decoration: none;
+}
+
+.footer__inner .footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.94rem;
+}
+
+.footer__inner .footer__nav-link {
+  margin-left: 1.5rem;
+  color: #BBBBCC;
+  text-decoration: none;
+}
+
+.footer__inner .footer__nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer__inner .footer__nav-link--btn {
+  padding: 0.5rem 1.4rem;
+  border-radius: 20px;
+  border: 1px solid #6A696B;
+  line-height: 1.1;
+}
+
+.footer__inner .footer__nav-link--btn:hover {
+  text-decoration: none;
+  background-color: #BBBBCC;
+  border-color: #BBBBCC;
+  color: #2B2A2C;
 }
 /*# sourceMappingURL=style.css.map */
