@@ -28,6 +28,10 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-size: 1rem;
    color: $black;
+
+   &.no-scroll {
+      overflow: hidden;
+   }
 }
 
 .container {
@@ -104,4 +108,5 @@ body {
 @import "about";
 @import "reviews";
 @import "news";
-@import "footer"
+@import "footer";
+@import "modal"
