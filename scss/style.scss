@@ -12,7 +12,8 @@ $bg: #0A696B;
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
    margin: 0;
 }
 
@@ -45,6 +46,10 @@ body {
 
 .text-center {
    text-align: center;
+}
+
+.text-right {
+   text-align: right;
 }
 
 .img {
@@ -99,6 +104,11 @@ body {
          border: 2px solid $black;
       }
    }
+
+   &--thin {
+      min-width: 145px;
+      font-size: 0.8rem;
+   }
 }
 
 // BLOCKS
@@ -109,4 +119,6 @@ body {
 @import "reviews";
 @import "news";
 @import "footer";
-@import "modal"
+@import "modal";
+@import "modal-resume";
+@import "progress-bar"

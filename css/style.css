@@ -8,7 +8,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -40,6 +41,10 @@ body.no-scroll {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .img {
@@ -95,6 +100,11 @@ body.no-scroll {
 
 .btn--sm:hover {
   border: 2px solid #2B2A2C;
+}
+
+.btn--thin {
+  min-width: 145px;
+  font-size: 0.8rem;
 }
 
 .header {
@@ -668,12 +678,13 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1rem;
+  padding: 1rem;
   background-color: rgba(6, 15, 49, 0.9);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  overflow: auto;
 }
 
 .modal__dialog {
@@ -695,15 +706,15 @@ body.no-scroll {
   right: 0.9rem;
   z-index: 1;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .2s linear;
-  transition: -webkit-transform .2s linear;
-  transition: transform .2s linear;
-  transition: transform .2s linear, -webkit-transform .2s linear;
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
 }
 
 .modal__dialog .modal__close:hover {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .modal__dialog .modal-work {
@@ -730,6 +741,7 @@ body.no-scroll {
 .modal__dialog .modal-work .modal-work__content {
   width: 35%;
   padding: 3.4rem 6.6rem 1rem 1.73rem;
+  position: relative;
 }
 
 .modal__dialog .modal-work .modal-work__content .modal-work__header {
@@ -777,5 +789,162 @@ body.no-scroll {
   line-height: 2;
   color: #6A696B;
   margin-bottom: 8.66rem;
+}
+
+.modal__dialog .modal-work .modal-work__content .modal-work__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.8rem 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal__dialog .modal-work .modal-work__content .modal-work__footer .modal-work__btn {
+  font-size: 0.94rem;
+  font-family: inherit;
+  padding: 0;
+  color: #2B2A2C;
+  text-transform: uppercase;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal__content {
+  padding: 5rem 1rem;
+}
+
+.modal__content .modal__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2B2A2C;
+}
+
+.modal__content .timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4.2rem auto;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+}
+
+.modal__content .timeline::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #2B2A2C;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
+.modal__content .timeline__col {
+  width: 50%;
+}
+
+.modal__content .timeline__col--left {
+  text-align: right;
+  padding-right: 3.2rem;
+}
+
+.modal__content .timeline__col--right {
+  padding-left: 3.2rem;
+}
+
+.modal__content .timeline__col .timeline__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2.6rem;
+  text-transform: uppercase;
+  color: #2B2A2C;
+}
+
+.modal__content .timeline__col .timeline__item {
+  margin-bottom: 2.6rem;
+  color: #2B2A2C;
+}
+
+.modal__content .timeline__col .timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.modal__content .timeline__col .timeline__item .timeline__date {
+  display: block;
+  font-size: 0.94rem;
+  margin-bottom: 0.8rem;
+  text-decoration: underline;
+}
+
+.modal__content .timeline__col .timeline__item .timeline__subtitle {
+  font-size: 1.06rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.modal__content .timeline__col .timeline__item .timeline__position {
+  font-size: 0.94rem;
+  font-style: italic;
+}
+
+.modal__content .timeline__col .timeline__item .timeline__text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 0.8rem;
+  line-height: 1.5;
+  color: #2B2A2C;
+}
+
+.progress-bar {
+  margin-bottom: 2.6rem;
+}
+
+.progress-bar .progress-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar .progress-bar__item .progress-bar__left {
+  width: 100px;
+}
+
+.progress-bar .progress-bar__item .progress-bar__left .progress-bar__title {
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+
+.progress-bar .progress-bar__item .progress-bar__right {
+  padding-left: 1.2rem;
+}
+
+.progress-bar .progress-bar__item .progress-bar__right .progress-bar__it {
+  width: 139px;
+  height: 6px;
+  background-color: #EFEFEF;
+}
+
+.progress-bar .progress-bar__item .progress-bar__right .progress-bar__it .progress-bar__progress {
+  height: 100%;
+  background-color: #6A696B;
+  -webkit-transition: width .2s linear;
+  transition: width .2s linear;
 }
 /*# sourceMappingURL=style.css.map */
