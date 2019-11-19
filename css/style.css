@@ -43,6 +43,10 @@ body.no-scroll {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 .text-right {
   text-align: right;
 }
@@ -693,6 +697,10 @@ body.no-scroll {
   position: relative;
   margin: auto;
   background-color: #fff;
+}
+
+.modal__dialog--sm {
+  max-width: 900px;
 }
 
 .modal__dialog .modal__close {

@@ -17,6 +17,10 @@
       margin: auto;
       background-color: #fff;
 
+      &--sm {
+         max-width: 900px;
+      }
+
       .modal__close {
          width: 34px;
          height: 39px;

@@ -9,9 +9,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body class="no-scroll">
+<body>
+
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -71,20 +73,22 @@
 
 	<div class="works">
 		<div class="container">
+
 			<div class="works__nav">
-				<a href="#" class="works__nav-link">All</a>
-				<a href="#" class="works__nav-link">App</a>
-				<a href="#" class="works__nav-link">Websites</a>
-				<a href="#" class="works__nav-link">Interaction</a>
+				<a href="#" class="works__nav-link" data-filter="all">All</a>
+				<a href="#" class="works__nav-link" data-filter="app">App</a>
+				<a href="#" class="works__nav-link" data-filter="website">Websites</a>
+				<a href="#" class="works__nav-link" data-filter="interaction">Interaction</a>
 			</div>
 			<!-- /.works__nav -->
+
 			<div class="portfolio">
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="app">
 					<div class="work">
 						<img src="https://placehold.it/370x300" alt="work" class="work__image">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: app</div>
 							<!-- /.work__cat -->
 							<div class="work__title">
 								Project name
@@ -99,11 +103,11 @@
 				</div>
 				<!-- /.portfolio__col -->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="website">
 					<div class="work">
 						<img src="https://placehold.it/370x300" alt="work" class="work__image">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: website</div>
 							<!-- /.work__cat -->
 							<div class="work__title">
 								Project name
@@ -118,11 +122,11 @@
 				</div>
 				<!-- /.portfolio__col -->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="interaction">
 					<div class="work">
 						<img src="https://placehold.it/370x300" alt="work" class="work__image">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: interaction</div>
 							<!-- /.work__cat -->
 							<div class="work__title">
 								Project name
@@ -137,11 +141,11 @@
 				</div>
 				<!-- /.portfolio__col -->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="website">
 					<div class="work">
 						<img src="https://placehold.it/370x300" alt="work" class="work__image">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: website</div>
 							<!-- /.work__cat -->
 							<div class="work__title">
 								Project name
@@ -156,11 +160,11 @@
 				</div>
 				<!-- /.portfolio__col -->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="interaction">
 					<div class="work">
 						<img src="https://placehold.it/370x300" alt="work" class="work__image">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: interaction</div>
 							<!-- /.work__cat -->
 							<div class="work__title">
 								Project name
@@ -175,11 +179,11 @@
 				</div>
 				<!-- /.portfolio__col -->
 
-				<div class="portfolio__col">
+				<div class="portfolio__col" data-cat="app">
 					<div class="work">
 						<img src="https://placehold.it/370x300" alt="work" class="work__image">
 						<div class="work__content">
-							<div class="work__cat">category</div>
+							<div class="work__cat">category: app</div>
 							<!-- /.work__cat -->
 							<div class="work__title">
 								Project name
@@ -491,7 +495,7 @@
 	</div>
 	<!-- /.modal -->
 
-	<div class="modal">
+	<div class="modal" style="display: none;">
 
 		<div class="modal__dialog">
 
@@ -501,7 +505,8 @@
 
 			<div class="modal__content">
 
-				<h3 class="modal__title">RESUME</h3>
+				<h3 class="modal__title text-center">RESUME</h3>
+
 				<div class="text-center">
 					<a href="#" class="btn btn--thing">DOWNLOAD PDF</a>
 					<a href="#" class="btn btn--thing">PRINT</a>
@@ -671,6 +676,8 @@
 
 	</div>
 	<!-- /.modal -->
+
+	<script src="/js/script.js"></script>
 
 	<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/revicon" title="Revicon">Revicon</a> from <a href="https://www.flaticon.com/"
 		title="Flaticon">www.flaticon.com</a></div> -->
